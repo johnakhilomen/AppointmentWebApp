@@ -487,6 +487,11 @@ blockquote p, blockquote cite
   {
     font-size: large;
   }
+  .informationbar p
+  {
+    width: 40%;
+    margin: 0px auto;
+  }
   
    /* Header texts */
    .whiteHeader
@@ -549,6 +554,7 @@ blockquote p, blockquote cite
   .tocDiv
 {
   width: 50%;
+  margin: 0px auto;
 }
 
 .tocDiv a

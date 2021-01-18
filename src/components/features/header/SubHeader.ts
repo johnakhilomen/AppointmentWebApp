@@ -8,9 +8,8 @@ export default class SubHeader extends Component
     }
 
     render = () : HTMLElement => {
-        let text1 = this.CreateP(subbHeaderContent.p1, "", "") as HTMLHeadingElement;
-        let text2 = this.CreateP(subbHeaderContent.p2, "", "") as HTMLHeadingElement;
-        let sectionelement = this.CreateDivElement([text1, text2], "informationbar");
+        let text1 = this.CreateP(subbHeaderContent.p1 + " " + subbHeaderContent.p2, "", "") as HTMLHeadingElement;
+        let sectionelement = this.CreateDivElement([text1], "informationbar");
         return sectionelement;
     }
 }

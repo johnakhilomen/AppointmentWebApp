@@ -44,8 +44,10 @@ export class Body extends Component{
         let getStarted = new GetStarted("Get started", "button button3", "Stop losing hot prospects to email overload and start your trial today!").render();
         let whatpeopleareSaying = this.CreateH("h2", "What people are saying", "", "");
         whatpeopleareSaying.setAttribute("style","text-align: center");
+        let whyheading = this.CreateH("h2", "Why Appointly?", "", "");
+        whyheading.setAttribute("style","text-align: center");
         //Populate body's main div with components
-        let bodyDiv = this.CreateDivElement([mainBodyDiv, this.CreateElement("br"), this.CreateElement("hr"), upperBodyDiv, this.CreateElement("br"), this.CreateElement("hr"), whatpeopleareSaying, this.CreateElement("br"), testimonialsBodyDiv, testimonialsBodyDiv2, this.CreateElement("br"), getStarted])
+        let bodyDiv = this.CreateDivElement([whyheading, mainBodyDiv, this.CreateElement("br"), this.CreateElement("hr"), upperBodyDiv, this.CreateElement("br"), this.CreateElement("hr"), whatpeopleareSaying, this.CreateElement("br"), testimonialsBodyDiv, testimonialsBodyDiv2, this.CreateElement("br"), getStarted])
         return bodyDiv;
     }
 

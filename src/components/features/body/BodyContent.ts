@@ -2,19 +2,19 @@
 export default [
 
     {
-        icon: `/images/icons/sales.png`,
-        title : "Close more sales",
-        text: `When prospects can book you at the peak of their interest, you'll see up to a 300% increase in conversion rates and closed sales.`
+        icon: `/images/icons/profits.png`,
+        title : "Grow and increase your revenue",
+        text: `With our online payment feature, you can receive payment online, or charge customers for late cancellation or no-shows.`
     },
     {
-        icon: `/images/icons/address-book.png`,
-        title: "Manage your appointments",
-        text: `Up to 80% time saved from eliminating back-and-forth, manual reminders & appointment administration tasks means you'll close sales faster.`
+        icon: `/images/icons/service.png`,
+        title: "Provide quality service to your clients",
+        text: `Facilitate customer meetings, and allow your clients to access your services more efficiently.`
     },
     {
-        icon: `/images/icons/customer-review.png`,
-        title: "Gain Loyal Customers",
-        text: `Your customers & prospects will love the convenience sand simplicity of online booking. Boost their confidence in you and stand out from the crowd.`
+        icon: `/images/icons/notification.png`,
+        title: "Email And SMS Reminders",
+        text: `Email and SMS reminders alert your clients of upcoming appointments. If your client cancels, you also receive notification.`
     },
     
 ]

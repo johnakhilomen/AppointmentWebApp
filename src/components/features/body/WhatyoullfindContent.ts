@@ -1,17 +1,17 @@
 export default [
 
     {
-        icon: `/images/icons/sales.png`,
+        icon: `/images/icons/calendar.png`,
         title : "Appointment scheduling",
         text: `Schedule and manage appointments easily`
     },
     {
-        icon: `/images/icons/address-book.png`,
+        icon: `/images/icons/google.png`,
         title: "Appointment integration",
         text: `Integrate your appointments with other platforms like Google, Teams and Zoom`
     },
     {
-        icon: `/images/icons/customer-review.png`,
+        icon: `/images/icons/value.png`,
         title: "Calendar access",
         text: `Easily share your availability with your customers`
     },

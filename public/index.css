@@ -310,14 +310,11 @@ blockquote p, blockquote cite
 .tocDiv
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
-  height: 100px;
+  justify-content: center;
   margin-top: 30px;
   padding-top: 20px;
-  width: 100%;
-  margin: 0px auto;
 }
 
 .tocDiv a
@@ -458,8 +455,8 @@ blockquote p, blockquote cite
   border: 1px solid #f0f0f0;
   box-shadow: 2px 2px 8px #888888;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 /* Tablet screen */  
 @media only screen and (min-width: 700px) {

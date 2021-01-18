@@ -446,7 +446,7 @@ blockquote p, blockquote cite
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 
 .whatyoullfinddivelement {
@@ -455,7 +455,6 @@ blockquote p, blockquote cite
   border: 1px solid #f0f0f0;
   box-shadow: 2px 2px 8px #888888;
   text-align: center;
-  padding: 5px;
   margin-bottom: 10px;
 }
 /* Tablet screen */  

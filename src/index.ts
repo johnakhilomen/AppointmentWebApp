@@ -1,4 +1,5 @@
 import { App } from "./components/pages/App";
+import {Dashboard} from "./components/pages/DashboardPage";
 import { FeaturesPage } from "./components/pages/FeaturesPage";
 import { HowitworksPage } from "./components/pages/HowitworksPage";
 import { Registration } from "./components/pages/Registration";
@@ -11,7 +12,7 @@ let init = (): void => {
   let currentRoute = routerArray[routerArray.length - 1];
 
   let divRoot = document.querySelector("#root") as HTMLInputElement;
-
+  
   if(currentRoute.includes("features"))
   {
     new FeaturesPage(divRoot);
@@ -29,9 +30,13 @@ let init = (): void => {
   {
     new HowitworksPage(divRoot);
   }
-  else 
+  else if (currentRoute.includes("app"))
   {
     new App().render(divRoot);
+  }
+  else 
+  {
+    new Dashboard(divRoot);
   }
 }
 

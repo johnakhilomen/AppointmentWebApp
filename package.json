@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/johnakhilomen/typescript_webpack_boiler_plate#readme",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/cors": "^2.8.9",
     "@types/express": "^4.17.11",
     "nodemon": "^2.0.7",
@@ -32,6 +33,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",

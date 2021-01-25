@@ -4,6 +4,8 @@ import {HeaderComponent, SubHeaderComponent, HeaderEndsComponent} from "./App";
 import footerContent from "../features/footer/FooterContent";
 import Footer from "../features/footer/Footer";
 import { Login } from "../features/forms/Login";
+import { SocialButtons } from "../features/forms/SocialButtons";
+
 export class SignInPage 
 {
   private formHeader : HTMLHeadingElement = new Component("").CreateH("h2", "Sign in", "", "");
@@ -15,6 +17,7 @@ export class SignInPage
     divRoot.appendChild(SubHeaderComponent);
     divRoot.appendChild(this.formHeader);
     divRoot.appendChild(new Login().render());
+    divRoot.appendChild(new SocialButtons("").render());
     divRoot.appendChild(new Footer(footerContent).render());
   }
 } 

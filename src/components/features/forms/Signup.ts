@@ -49,12 +49,12 @@ export class Signup
                     label: "Fullname"
                 },
                 {
-                    id: "username",
+                    id: "email",
                     className: "inputClass",
                     elementType: ElementType.INPUT_TEXT,
-                    dispatcherName: "usernameDispatcher",
+                    dispatcherName: "emailDispatcher",
                     eventType: "input",
-                    label: "Username"
+                    label: "email"
                   
                 },
                 {

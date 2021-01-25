@@ -35,12 +35,12 @@ export class Login
         this._elementModels =
             [
                 {
-                    id: "username",
+                    id: "email",
                     className: "inputClass",
                     elementType: ElementType.INPUT_TEXT,
-                    dispatcherName: "usernameDispatcher",
+                    dispatcherName: "emailDispatcher",
                     eventType: "input",
-                    label: "Username"
+                    label: "email"
                   
                 },
                 {

@@ -27,16 +27,11 @@ app.use(function(req: Request, res: Response, next: NextFunction) {
     next();
 });
 
+//Authentication needed for this route
 app.get("/authenticated", function (req: Request, res: Response) {
     //console.log(req.query);
     const {token} = req.query;
-    res.redirect(`/${token}`);
-    //We render Dashboard here
-});
-
-app.get("/:id", function (req: Request, res: Response) {
-    //res.send("Welcome to your Dashboard");
-    res.render('index');
+    res.redirect(`/dashboard?q=${token}`);
     //We render Dashboard here
 });
 

@@ -1,5 +1,5 @@
 import { App } from "./components/pages/App";
-import {Dashboard} from "./components/pages/DashboardPage";
+import {Dashboard} from "./components/features/dashboard/DashboardPage";
 import { FeaturesPage } from "./components/pages/FeaturesPage";
 import { HowitworksPage } from "./components/pages/HowitworksPage";
 import { Registration } from "./components/pages/Registration";
@@ -30,13 +30,18 @@ let init = (): void => {
   {
     new HowitworksPage(divRoot);
   }
-  else if (currentRoute.includes("app"))
+  else if (currentRoute.includes("home"))
   {
     new App().render(divRoot);
   }
-  else 
+  else if (currentRoute.includes("dashboard")) 
   {
     new Dashboard(divRoot);
+  }
+  else  
+  {
+    //Will render 404 page here later
+    new App().render(divRoot);
   }
 }
 

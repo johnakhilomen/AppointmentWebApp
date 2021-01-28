@@ -3,6 +3,7 @@ export enum ElementType{
     INPUT_CHECKBOX = "checkbox",
     INPUT_RADIO = "radio",
     INPUT_PASSWORD = "password",
+    SELECT = "select",
     FORM = "",
     BUTTON = ""
 }

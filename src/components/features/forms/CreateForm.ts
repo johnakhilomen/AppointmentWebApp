@@ -9,13 +9,15 @@ export class CreateForm {
     private buttonText: string;
     private elements: ElementModel[];
     private labels: string[];
+    private options: string[];
 
-    constructor(id: string, className: string, buttonText: string, elements: ElementModel[], labels: string[]) {
+    constructor(id: string, className: string, buttonText: string, elements: ElementModel[], labels: string[],  options: string[] = []) {
         this.id = id;
         this.className = className;
         this.buttonText = buttonText;
         this.elements = elements;
         this.labels = labels;
+        this.options = options;
     }
 
     /**
@@ -23,7 +25,7 @@ export class CreateForm {
      */
     build = (): HTMLFormElement => {
         let form: IFormElement = new FormElement(this.id, this.className, "submit", "formSubmit");
-        let elementsArr: HTMLInputElement[] = [];
+        let elementsArr: any;
 
         this.elements.forEach((element) => {
             let input: IFormElement = new FormElement(element.id, element.className, element.eventType, element.dispatcherName);
@@ -43,6 +45,10 @@ export class CreateForm {
                 else if(element.elementType == ElementType.INPUT_RADIO)
                 {
                     elementsArr.push(input.Input("radio"));
+                }
+                else if(element.elementType == ElementType.SELECT)
+                {
+                    elementsArr.push(form.Select(this.options));
                 }
                 else
                 {

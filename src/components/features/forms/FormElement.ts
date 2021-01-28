@@ -16,6 +16,17 @@ export class FormElement implements IDocumentElement, IFormElement, ICustomEvent
         this.eventType = eventType || "";
         this.dispatcherName = dispatcherName;
     }
+    Select(options: string[]): HTMLSelectElement {
+        let s = this.CreateElement("select") as HTMLSelectElement;
+        for(let i = 0; i < options.length; i++)
+        {
+            let option = this.CreateElement("option") as HTMLOptionElement;
+            option.textContent = options[i];
+            s.appendChild(option);
+        }
+       
+      return s;
+    }
 
     Button(): HTMLInputElement {
         let newInput = this.CreateElement("button") as HTMLInputElement;
@@ -29,7 +40,7 @@ export class FormElement implements IDocumentElement, IFormElement, ICustomEvent
         return document.createElement(element);
     }
     
-    Form(buttonText: string, buttonClassName: string, elements: HTMLInputElement[], labels: string[]): HTMLFormElement {
+    Form(buttonText: string, buttonClassName: string, elements: HTMLElement[], labels: string[]): HTMLFormElement {
         let form = this.CreateElement("form") as HTMLFormElement;
         form.id = this.id;
         form.className = this.className;

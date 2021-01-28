@@ -2,7 +2,7 @@ import { Component } from "../../Component";
 import footerContent from "../footer/FooterContent";
 import { DashboardNav } from "./DashboardNav";
 import { DashboardHeader } from "./DashboardHeader";
-
+import {SetAvailabilityPage} from "./pages/SetAvailabilityPage"
 export class Dashboard extends Component{
 
     private _divRoot: HTMLInputElement;
@@ -15,6 +15,7 @@ export class Dashboard extends Component{
         div.className = "area";
         this._divRoot.appendChild(div);
         this._divRoot.appendChild(new DashboardNav().render());
+        this._divRoot.appendChild(new SetAvailabilityPage("").render());
         
     }
 
